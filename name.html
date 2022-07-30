@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <title>Random App</title>
+        <meta charset="UTF-8">
+        <link rel = "icon" href =
+"https://img.icons8.com/bubbles/344/coconut-cocktail.png"
+        type = "image/x-icon">
+</head>
+ 
+<body style = "text-align:center;">
+     
+    <h1 style = "color:rgb(173, 143, 225);">
+        Tới lượt ai đây?
+    </h1>
+     
+    <p id = "GFG_UP" style =
+        "font-size: 15px; font-weight: bold;">
+    </p>
+     
+    <button id = "button" onclick = "GFG_Fun()">
+        Click here
+    </button>
+     
+    <p id = "GFG_DOWN" style =
+        "font-size: 24px; font-weight: bold; color: rgb(167, 192, 240)">
+    </p>
+     
+    <script>
+
+        var down = document.getElementById('GFG_DOWN');
+         
+        var arr = ['Anh Thư', 'Huyền Trang', 'Hồng Nhung','Đan Trinh'];
+         
+        up.innerHTML = "Click on the button to select"
+                        + " random element from the"
+                        + " array.<br><br>" + arr;
+         
+        function random(mn, mx) {
+            return Math.random() * (mx - mn) + mn;
+        }
+         
+        function GFG_Fun() {
+            down.innerHTML = arr[Math.floor(random(1, 5))-1];
+        }
+    </script>
+</body>
+</html>
